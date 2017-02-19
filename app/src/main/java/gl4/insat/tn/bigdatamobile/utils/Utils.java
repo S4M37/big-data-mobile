@@ -1,5 +1,9 @@
 package gl4.insat.tn.bigdatamobile.utils;
 
+import com.couchbase.client.java.Bucket;
+import com.couchbase.client.java.CouchbaseCluster;
+import com.google.gson.Gson;
+
 import java.util.concurrent.TimeUnit;
 
 import gl4.insat.tn.bigdatamobile.config.Endpoints;
@@ -28,12 +32,33 @@ public class Utils {
                     .readTimeout(Utils.TIMEOUT, TimeUnit.SECONDS).build();
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(Endpoints.COUCHEBASE_ENDPOINT)
+                    .baseUrl(Endpoints.COUCHEBASE_API_ENDPOINT)
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
             couchBaseApiInstance = retrofit.create(CouchBaseApiRetrofitServices.class);
         }
         return couchBaseApiInstance;
+    }
+
+    private static Gson gson;
+
+    public static Gson getGson() {
+        if (gson == null) {
+            gson = new Gson();
+        }
+        return gson;
+    }
+
+    private static Bucket bucket;
+
+    public static Bucket getBucketCluster(String bucketName) {
+        if (bucket == null) {
+            // Create a cluster reference
+            CouchbaseCluster cluster = CouchbaseCluster.create(Endpoints.SERVER_IP);
+            // Connect to the bucket and open it
+            bucket = cluster.openBucket(bucketName);
+        }
+        return bucket;
     }
 }
