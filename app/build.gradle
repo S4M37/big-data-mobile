@@ -1,4 +1,5 @@
 apply plugin: 'com.android.application'
+apply plugin: 'android-apt'
 
 android {
     compileSdkVersion 25
@@ -19,6 +20,9 @@ android {
     }
 }
 
+def AAVersion = '4.2.0'
+
+
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
@@ -38,5 +42,8 @@ dependencies {
 
     compile 'com.couchbase.client:java-client:2.4.1'
 
+    apt "org.androidannotations:androidannotations:$AAVersion"
+    compile "org.androidannotations:androidannotations-api:$AAVersion"
+    
     testCompile 'junit:junit:4.12'
 }

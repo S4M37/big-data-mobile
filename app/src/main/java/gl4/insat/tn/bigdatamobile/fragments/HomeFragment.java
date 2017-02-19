@@ -7,6 +7,8 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
+import android.widget.Toast;
 
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -22,7 +24,9 @@ import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
 
+
 public class HomeFragment extends Fragment {
+
     public static HomeFragment newInstance() {
 
         Bundle args = new Bundle();
@@ -32,12 +36,36 @@ public class HomeFragment extends Fragment {
         return fragment;
     }
 
+    Button retryButton;
+
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+    }
 
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        View rootView = inflater.inflate(R.layout.home_fragment, container, false);
+        initializeView(rootView);
+        return rootView;
+
+    }
+
+    public void initializeView(View rootView) {
+        retryButton = (Button) rootView.findViewById(R.id.retry_button);
+        retryButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                getDocById("21st_amendment_brewery_cafe");
+            }
+        });
+    }
+
+
+    public void getDocById(String docId) {
         CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getVyndApiRetrofitInstance();
-        Call<ResponseBody> call = couchBaseApiRetrofitServices.getDocById("21st_amendment_brewery_cafe");
+        Call<ResponseBody> call = couchBaseApiRetrofitServices.getDocById(docId);
         call.enqueue(new Callback<ResponseBody>() {
             @Override
             public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
@@ -46,6 +74,7 @@ public class HomeFragment extends Fragment {
                     jsonObject = jsonObject.getJSONObject("json");
                     Brewery brewery = Utils.getGson().fromJson(String.valueOf(jsonObject), Brewery.class);
                     Log.d("CouchBase : ", "onResponse: " + brewery.toString());
+                    Toast.makeText(getContext(), brewery.toString(), Toast.LENGTH_LONG).show();
                 } catch (IOException | JSONException | NullPointerException e) {
                     e.printStackTrace();
                 }
@@ -57,6 +86,7 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
         // Couchbase Java SDK
         // TODO: 19/02/2017 Bug: java.lang.NoClassDefFoundError: Failed resolution of: Ljava/lang/management/ManagementFactory;
         /*
@@ -67,12 +97,5 @@ public class HomeFragment extends Fragment {
             Log.d("CouchBase SDK :", String.valueOf(row.value()));
         }
         */
-    }
-
-    @Nullable
-    @Override
-    public View onCreateView(LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        View rootView = inflater.inflate(R.layout.home_fragment, container, false);
-        return rootView;
     }
 }
