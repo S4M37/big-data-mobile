@@ -18,9 +18,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+
         <meta-data
             android:name="com.google.android.geo.API_KEY"
-            android:value="AIzaSyBbwFH9CBLWD2sdu0zjZmHivn1GjwoxnC0" />
+            android:value="AIzaSyBviH4h76T2dSpW5FsylAx9hUScPY_xhb0" />
 
         <activity android:name=".activities.MainActivity">
             <intent-filter>

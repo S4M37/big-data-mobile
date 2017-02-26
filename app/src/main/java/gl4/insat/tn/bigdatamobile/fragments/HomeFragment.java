@@ -16,6 +16,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 import gl4.insat.tn.bigdatamobile.R;
+import gl4.insat.tn.bigdatamobile.activities.MainActivity;
 import gl4.insat.tn.bigdatamobile.entities.Brewery;
 import gl4.insat.tn.bigdatamobile.services.CouchBaseApiRetrofitServices;
 import gl4.insat.tn.bigdatamobile.utils.Utils;
@@ -51,6 +52,7 @@ public class HomeFragment extends Fragment {
         return rootView;
 
     }
+    
 
     public void initializeView(View rootView) {
         retryButton = (Button) rootView.findViewById(R.id.retry_button);
@@ -58,6 +60,13 @@ public class HomeFragment extends Fragment {
             @Override
             public void onClick(View view) {
                 getDocById("21st_amendment_brewery_cafe");
+            }
+        });
+        Button mapButton = (Button) rootView.findViewById(R.id.map_button);
+        mapButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                ((MainActivity) getActivity()).showFragment(MapFragment.newInstance());
             }
         });
     }

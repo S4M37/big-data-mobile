@@ -1,0 +1,743 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.11.0\840897fcd7223a8143f1d9b6f69714e7be34fd50\okio-1.11.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="840897fcd7223a8143f1d9b6f69714e7be34fd50">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\okio-1.11.0_346f42c56266d41a9b6484728970a2479f511bf9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-games\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1e11c68fec92a17c84dd8d1dd80e74c4e67b12e2">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-games-10.0.1_5a6f3d78d565c326e66405886b0ae3a84669ead2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e871881b36b32e6bfd271a830c6eeb54ff0fc185">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-impl-10.0.1_f4dba47df1f01fbba9d5037551cd8df269145348\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="971509bbe30bb7b971fc1c49d7b23d0d818830ac">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-10.0.1_560da08544bd9048d1f100326c66712218e058bb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="09cf6aa1390f95157e8295d02be7868f568825fc">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-common-10.0.1_516e4522932f2fa62e406d9dde8f0065f6bd0f82\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-drive\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="028f8255cb977b29cdffbfcf05caa0459686120c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-drive-10.0.1_e8eb4cfe2ff7c985616f9d0716de6b3eb8e4917b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast-framework\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="df1cb17511aabbb63264a0024949d1e42502a512">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-framework-10.0.1_9e301ea9ba56ede5ae6c390ee013b717bbaa138a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\recyclerview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="297d4bcf6ed4e747a1bf7d0d094a2d911a8d3a8e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-recyclerview-v7-25.0.1_34a2cdba814cf38309a35bfcd24a5e521247da44\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-api\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b1df8fa3d372a27e4e969ce00b00689ee1eed031">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-api-10.0.1_ee8367c9e8629f5685ef4fa96cf9cd129f024198\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-messaging\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4b17463c814bdc562fb0392fa3494063623a0904">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-messaging-10.0.1_5bc96539b837618ea5c18c809035d29939de0591\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="756f6297eef79784f5e356dcd4f39865028b2bd0">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-basement-10.0.1_12515e258e9ea9f323968de2d313eb2eb8f4238f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="00d4c8eebf2b681073c72a26bd0849549e51c7cb">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-utils-25.0.1_1f14c68ae784deebe8f7d33c9df3cc446cd9b6ac\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wallet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2d5d113b0352ab60946fc44c518cf68fd26cbb79">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wallet-10.0.1_f90686611c9315ad1884d9f66bb1ba6407ca1d5d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a48dc0b148059764d32500be558702d5ff932058">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-identity-10.0.1_f228ef9f3b853899bede0fd32dae19db1f050975\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e5343c9d19cb19ff55f6b268c7f3fe8c9d224f6f">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_3ae1ac308b0f45eab000c68ba2565dd3e75ddcda\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\retrofit\2.1.0\2de7cd8b95b7021b1d597f049bcb422055119f2c\retrofit-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="2de7cd8b95b7021b1d597f049bcb422055119f2c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\retrofit-2.1.0_8171ead02b3250b232924c21afa52f1f701ffc60\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="25438f55fc6d906a0e72f30b21487541430ede43">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-base-10.0.1_7c1f0271aa8f41c119d57f25a9007a9008399f9c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads-lite\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b955cb3a1ad6f1b6ff728ce1e0cd592c1717b440">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-lite-10.0.1_6a942913ed224a2faa1731dfe454f368fcbea756\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-safetynet\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f6cf557be4dbd0282ea2388633e5378634423226">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-safetynet-10.0.1_bf7a5acff4309c93be7e598386da0f6e2aea8ef7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="516f77e82c3b38564112b2203f4e868d53b45260">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run_b83fcc57c1a2d96b17af49c95f140b3edaf9070c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.couchbase.client\java-client\2.4.1\e8967368edb19a1be61dae64d7443383711981df\java-client-2.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e8967368edb19a1be61dae64d7443383711981df">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\java-client-2.4.1_9f70455e7a06cad9c4b3339d821ddb156a2c9851\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-clearcut\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1d193729baf37df3d902a423291423a0df7e3779">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-clearcut-10.0.1_84a1f568d883df7c2c1655505c3bb6c9c992bfe9\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6addaba208e21c6da776d0ca75b6b23a6ccd5499">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tasks-10.0.1_30d036791c03c2351aa5192459750fd4e041d966\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\org.androidannotations\androidannotations-api\4.2.0\ffe21dbedaf7bf1ae281227a3a476a74f0459f19\androidannotations-api-4.2.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ffe21dbedaf7bf1ae281227a3a476a74f0459f19">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\androidannotations-api-4.2.0_f162fc5b615e4882465480a4a4162dca039aea3e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6a1479afe9f1b3645e1cd9a87318976893472818">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-media-compat-25.0.1_1b35e880ee147b4418227ac39953a05910d3ff5e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-appindexing\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ae80d328a8548b4610ead6c624bab8c6a6984f5b">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-appindexing-10.0.1_23f9c6fa4fac7c6d4138f8a0293e9993fefcfabc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-places\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f3e51e9c5233b8897f61e08a6a27bc36283c2724">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-places-10.0.1_7c3df2833de36dc42c71d49abb66b4c90f2d71f2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e96c6974cf924e7ee3b230e6847d5731423388c9">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-base-10.0.1_55eb9a82280a76c66f373d707dc39e233a0fb52b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-ads\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d0460bf07cc3657e0be518ca01c174493951c6b8">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-ads-10.0.1_163e91c41cce770f516d09fc6afbd5932db62487\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gcm\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8308ed003522a2ee8958311afcc4cfd0470377cd">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gcm-10.0.1_0fb5df44210ab85b90540cca0463e663b3a6f0b8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d52de963ef67768bf87f25c9ffb99ac9e3ddf98f">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\instant-run-bootstrap_15847c21ac59db8fd9fc3b8c7010622c0e38c0d4\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4c829ff0ccfecb28a999ee46d9e75948dfc777a4">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-analytics-10.0.1_8e556da0c03c52d1935947fcdfc4fd21cee64bd5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="bc7e99e8d0fc279a05aa91378530f467ad62d443">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-core-ui-25.0.1_bdeb023a74b64f5ebd9c2c738464fe1be64e8ff6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-wearable\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="408a599ac77cd17fe8e8919326bec617b3d005bd">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-wearable-10.0.1_0a02c9d26ded9a01954eca17e69db41ba87521d1\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c5b7145fb34779b6639147b8f2f8dd77c0db771b">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_b509a9e5d13b115f4905443489a369c83f00d0ba\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b327fbe2fad414bc38cf0ce8f7efe1a38f572837">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-mediarouter-v7-24.0.0_fca56251ac3f9d783aff6b6005c9a830533de9ca\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-instantapps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="45305e6af414dab5aba6c3225081c2f15c3bdd1e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-instantapps-10.0.1_4d9edaf92eb3292fee7db838fed61d112e788a00\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.google.code.gson\gson\2.7\751f548c85fa49f330cecbb1875893f971b33c4e\gson-2.7.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="751f548c85fa49f330cecbb1875893f971b33c4e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\gson-2.7_75b02d10cdb2fcd7a76aed1c231da99ec5faf608\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-fitness\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7a64bf6dc775198eed9db9468a133adf7dfe6562">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-fitness-10.0.1_678666587a333b063258abf44f017480178f963e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f83b00041ecfba705603fec40363416c7de69719">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_beee1c5695e39395a89483d1ac14cc90136d89c7\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6bb5d347ebc0c6ef3c83a905222a688da5d2f7b4">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-iid-10.0.1_c157a919aa70a7ef8ff486b5d8f73a0df73702ce\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="9cca2818594cc5348806d6662133491e7ea0fa8d">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-auth-10.0.1_899cc51e4f1b000410c34a58954fbac6ee3ba639\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-v4\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-v4-25.0.1_ace3ca9e7fff6a82c297f8033167c05d862d4d84\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-storage\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="dd39827d2067497e60e21da48a7926000b6d4b0c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-storage-10.0.1_b578f0e246d6eec2df791a0c0daa84a67eb6873b\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-tagmanager-v4-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f23ad0f8e58713ff4b55f61c0bbde3830378347c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-tagmanager-v4-impl-10.0.1_9f7a3d64587e31ec12690477aab147fb6157d1a5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\logging-interceptor\3.6.0\81887458b69ddc32722df7e4c35235fd74e6a8ba\logging-interceptor-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="81887458b69ddc32722df7e4c35235fd74e6a8ba">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\logging-interceptor-3.6.0_1d216fcb7ec9eb080ae2a0421757639289a6943c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3af8cc51ef7088e56f132780da8c0bd858b6a6ad">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_d928dc405b199de7157bef03fadba6e722482cf5\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-common\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="eb0d830e3eabb9deb9ec44869cf7ac7ea1ad794c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-common-10.0.1_3a105374466e9fc6563d333def35b47bb4687d7a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-vision\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ba6aa5e69ef31dee57208125323cee958fc67565">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-vision-10.0.1_ed20775e6c5482e667af8dc42c83b58ea18ad0e0\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-nearby\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c6e1f361e9d61aece9dac39b77fcc98a337a144d">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-nearby-10.0.1_86a469f09ec86cb61fca6725722d99c051b76b0e\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\okhttp-3.6.0_f41fbb53189f04d237db595d0964b1a233314ec8\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\AppData\Local\Android\android-sdk\extras\android\m2repository\com\android\support\support-annotations\25.0.1\support-annotations-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="a09194311f8f89c3e6db09d79f50897a889d615e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\support-annotations-25.0.1_c54730f1c696d81a7091bf7d7a4348c5e191ac7c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-location\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="44a694d4095be84c2888764b1f7256b385c030ad">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-location-10.0.1_1113c0be9505903c324acf57232fe11170a74fbe\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.squareup.retrofit2\converter-gson\2.1.0\aa557d71ead91cbf26e0c316a0f593d168303309\converter-gson-2.1.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="aa557d71ead91cbf26e0c316a0f593d168303309">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\converter-gson-2.1.0_5566f570eb480f646132a602263b26b0ae766946\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f7ac4b327fdb9e2ee386f5adc46164927658de4b">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-appcompat-v7-25.0.1_2dfdb93f2a0f7f795f591c7307384c5ea17e1995\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="433f4d6aa5f21f19552afe0e6c5eff0fedba73ad">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-10.0.1_ad30262f5dad377539fad174b35f86b93ec8181f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\libs\internal_impl-25.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c0bd6ffb002a85b5e7cad29f8558d1cc59539679">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-25.0.1_db234cc93aa38e799a626764082b9205966f0d26\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\io.reactivex\rxjava\1.2.3\7fe1a94c1aeb958acc876fe616922cc191f3222c\rxjava-1.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="7fe1a94c1aeb958acc876fe616922cc191f3222c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\rxjava-1.2.3_a76f97af2917d28f2dfcbfc604540380e6afd2c2\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="1108575c7dc7b7f5b378b3290ac90de81a9b8830">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-cardview-v7-25.0.1_45ab2865e79f80dafb4edd2193ea51a9a95c1496\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-compat\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="51eba4a4dd73044f90a9d58dd7ca34adbebfcf4e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-compat-25.0.1_d2e4b2f2c0586ca0ba290dd3fc25ee9db08b331d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-plus\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c14f0c89f28cf782e42581ab0aba5f63af39b3d2">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-plus-10.0.1_ccd929bd17a5c7e9556648556670683051087d16\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\palette-v7\24.0.0\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="734e80dffea7bd76c18ae256822a124c30d85850">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-palette-v7-24.0.0_9d7c322f513f8283196b4a27fb7a6c1c4de28af6\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-cast\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="771267c5b0c7a5b348d3205dcfa1f871af7e0177">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-cast-10.0.1_d140e12bfd1953841c361d1ebf7ea8e20154c403\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-maps\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="27777b3cad3c20b1acab19f6e37fe3e03371bf6e">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-maps-10.0.1_abb71de504200dbd58254122dcade83c0f923e6f\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\.gradle\caches\modules-2\files-2.1\com.couchbase.client\core-io\1.4.1\f3cf36d903c7b7a572e825849514d2e298b946ad\core-io-1.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="f3cf36d903c7b7a572e825849514d2e298b946ad">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\core-io-1.4.1_14e54449842657ab09bcbd5802fabbb6a2b472bc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\design\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="3b236883e0df6002cabb01ce57d00a5b1e5de610">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-design-25.0.1_9a283c0758f2666eff276e4fee9c9557d1b63d2c\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\transition\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="c1b6ab157e8e12cb08b9ee82bb5e3c5d22632eb3">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-transition-25.0.1_c9aee6bf1eceb85c85f671c9aa81b21454573adc\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database-connection\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8010ae6ed32828a145b25ec97bc07b7a83c6318f">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-connection-10.0.1_fefd65301633884ef8ff9de196adeac762f31d68\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-database\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="8f128aeeb7e31271b28a7adb9dac1f3a6ed9f5e7">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-database-10.0.1_e64c854b91a491d53c075251d63aca7d646d4b11\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-iid\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="486371f97baad8e607f332f20fee1d3dd00a731a">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-iid-10.0.1_bd00fdaf09ddfe22d0b4aac277a9866140a56232\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-fragment\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="26c6eef571592c91f29e56fda0bac73321de0c92">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-fragment-25.0.1_f2e18595e1a1d0b74c29633c0a6724fe453b1454\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="772bed2d992b67b9d0327f766cc95cd63031dcd3">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-animated-vector-drawable-25.0.1_2c49a860068cde93d23be65ce0673043165a720a\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-crash\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="de29a39f9260f88151b1ef453140e71c76b6c415">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-crash-10.0.1_06d6ce592a75dfabb903aa48d81b5f14e2144021\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b24e1c688744078e1fa833ffadf696794761bbe5">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.android.support-support-vector-drawable-25.0.1_9508700360bce18b3418dcdd5c981fb3556535ea\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-appinvite\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="39907d5c8f5902fffef30160ca7447c93b82405c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-appinvite-10.0.1_45a6cb2654ba74b204e11036d52662379c16f2cb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-gass\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="57c2eceb8548de84509d1ebc293fedec53231f6c">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-gass-10.0.1_9bf4d8fff4999185f128139e52b25311bba6f058\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-awareness\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="4385ccc0a88b33d182a836eadb47be55c8eb1107">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-awareness-10.0.1_a5a3fbf5f2501de0509674e2fdf9eedbcb4a05fb\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-config\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="ffc15e965a9e8c28f24455eedd4cac215c45d1fc">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-config-10.0.1_cadd3ec6af079b300a4c0da99aed6acd05034e0d\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-panorama\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="92c871a22463a247e8a77a9f3fd231c278788c4a">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-panorama-10.0.1_48501c2b09566ae99ee8e99a6aa8742c441a2e46\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.android.support\mediarouter-v7\24.0.0\jars\libs\internal_impl-24.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="b6763651ec29b4c95e7bbe63fc393ffcc8c4c2c5">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\internal_impl-24.0.0_0998ca04201d8d911a480eabd7beccefc35f2215\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="e2185aff89caeb337b1ffc36d5e525d8318e7cfe">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.android.gms-play-services-auth-10.0.1_812d300549da23ef4bff41307ec18c77aa21e268\classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\exploded-aar\com.google.firebase\firebase-analytics-impl\10.0.1\jars\classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="25.0.1"
+        sha1="6116e0e7069de7fc259aac8e08b84f32c2038231">
+        <dex dex="C:\Users\Vyndee\Desktop\big-data-mobile\app\build\intermediates\transforms\dex\debug\folders\1000\10\com.google.firebase-firebase-analytics-impl-10.0.1_c0851d1b367c9329add5f0d9236eaeb87c41e742\classes.dex" />
+    </item>
+
+</items>
