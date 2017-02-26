@@ -1,0 +1,51 @@
+{
+  "project_info": {
+    "project_number": "138875543550",
+    "project_id": "bigdata-mobile"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:138875543550:android:875de066525cbdfd",
+        "android_client_info": {
+          "package_name": "gl4.insat.tn.bigdatamobile"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "138875543550-p1nsvlmqti1b95enedni6duvrkja1pl8.apps.googleusercontent.com",
+          "client_type": 3
+        },
+        {
+          "client_id": "138875543550-fgf9kggdtgh9a1vooegkemge7p1jgj3o.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "gl4.insat.tn.bigdatamobile",
+            "certificate_hash": "ae9aedd6e88c88f81caa918be54ff5480ea79d36"
+          }
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBru9LfUnnydre8_9T09PrPQdwga1xOdBA"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 2,
+          "analytics_property": {
+            "tracking_id": "UA-74227735-4"
+          }
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
