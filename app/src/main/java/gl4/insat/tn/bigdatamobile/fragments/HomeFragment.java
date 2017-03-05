@@ -73,7 +73,7 @@ public class HomeFragment extends Fragment {
 
 
     public void getDocById(String docId) {
-        CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getVyndApiRetrofitInstance();
+        CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getCouchBaseApiRetrofitInstance();
         Call<ResponseBody> call = couchBaseApiRetrofitServices.getDocById(docId);
         call.enqueue(new Callback<ResponseBody>() {
             @Override

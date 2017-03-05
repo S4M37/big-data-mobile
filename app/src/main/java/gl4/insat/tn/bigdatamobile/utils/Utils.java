@@ -22,7 +22,7 @@ public class Utils {
 
     private static CouchBaseApiRetrofitServices couchBaseApiInstance;
 
-    public static CouchBaseApiRetrofitServices getVyndApiRetrofitInstance() {
+    public static CouchBaseApiRetrofitServices getCouchBaseApiRetrofitInstance() {
         if (couchBaseApiInstance == null) {
 
             HttpLoggingInterceptor interceptor = new HttpLoggingInterceptor();
@@ -60,5 +60,9 @@ public class Utils {
             bucket = cluster.openBucket(bucketName);
         }
         return bucket;
+    }
+
+    public static int add(int a,int b){
+        return a+b;
     }
 }

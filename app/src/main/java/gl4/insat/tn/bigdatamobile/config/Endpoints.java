@@ -11,4 +11,5 @@ public class Endpoints {
     public static final String COUCHEBASE_ENDPOINT = "http://" + SERVER_IP + ":8091/";
     public static final String COUCHEBASE_API_ENDPOINT = COUCHEBASE_ENDPOINT + "pools/default/buckets/";
     public static final String COUCHEBASE_BEER_SAMPLE_URI = "beer-sample/docs/";
+    public static final String COUCHEBASE_MOBILE_URI = "mobile_bucket/docs/";
 }

@@ -8,6 +8,7 @@ import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -27,8 +28,14 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
+import com.google.gson.JsonObject;
+
+import java.util.Random;
 
 import gl4.insat.tn.bigdatamobile.R;
+import gl4.insat.tn.bigdatamobile.entities.User;
+import gl4.insat.tn.bigdatamobile.services.CouchBaseApiRetrofitServices;
+import gl4.insat.tn.bigdatamobile.utils.Utils;
 
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -83,7 +90,6 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         initializeMapView(rootView, savedInstanceState);
-        startLocationUpdates();
     }
 
     private void initializeView() {
@@ -112,7 +118,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         LatLng latLng = new LatLng(36.804402, 10.165068);
         googleMaps.addMarker(new MarkerOptions().title("traffic").position(latLng)
-                .icon(BitmapDescriptorFactory.fromResource(R.drawable.traffic)).draggable(true));
+                .icon(BitmapDescriptorFactory.fromResource(R.drawable.parked_car)).draggable(true));
+        startLocationUpdates();
 
     }
 
@@ -126,6 +133,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private static final int FASTEST_INTERVAL = 5000;
 
     protected void startLocationUpdates() {
+        Log.d("startLocationUpdates()", "startLocationUpdates: ");
         // Create the location request
         LocationRequest mLocationRequest = LocationRequest.create()
                 .setPriority(LocationRequest.PRIORITY_BALANCED_POWER_ACCURACY)
@@ -144,6 +152,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                 // for ActivityCompat#requestPermissions for more details.
                 return;
             }
+            Log.d("location", "startLocationUpdates: ");
             LocationServices.FusedLocationApi.requestLocationUpdates(mGoogleApiClient,
                     mLocationRequest, (LocationListener) this);
         } else {
@@ -170,6 +179,41 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             googleMaps.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(myLastLocation.getLatitude(),
                     myLastLocation.getLongitude()), 14));
             googleMaps.setMyLocationEnabled(true);
+
+            CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getCouchBaseApiRetrofitInstance();
+
+            Random ran = new Random();
+
+            char data = ' ';
+            String dat = "";
+            for (int i = 0; i <= 30; i++) {
+                data = (char) (ran.nextInt(25) + 97);
+                dat = data + dat;
+            }
+            User user = new User();
+            user._userId = dat;
+            user.lat = myLastLocation.getLatitude();
+            user.lng = myLastLocation.getLongitude();
+            JsonObject jsonObject = new JsonObject();
+
+            jsonObject.addProperty("_userId", dat);
+            jsonObject.addProperty("lat", myLastLocation.getLatitude());
+            jsonObject.addProperty("lng", myLastLocation.getLongitude());
+            Log.d("add doc", "onConnected: " + jsonObject.toString());
+            /*
+            Call<ResponseBody> call = couchBaseApiRetrofitServices.addDocById(dat, jsonObject);
+            call.enqueue(new Callback<ResponseBody>() {
+                @Override
+                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+                }
+
+                @Override
+                public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+                }
+            });
+            */
         }
     }
 
