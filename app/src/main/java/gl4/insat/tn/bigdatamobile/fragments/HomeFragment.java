@@ -29,9 +29,7 @@ import retrofit2.Response;
 public class HomeFragment extends Fragment {
 
     public static HomeFragment newInstance() {
-
         Bundle args = new Bundle();
-
         HomeFragment fragment = new HomeFragment();
         fragment.setArguments(args);
         return fragment;
@@ -50,9 +48,7 @@ public class HomeFragment extends Fragment {
         View rootView = inflater.inflate(R.layout.home_fragment, container, false);
         initializeView(rootView);
         return rootView;
-
     }
-    
 
     public void initializeView(View rootView) {
         retryButton = (Button) rootView.findViewById(R.id.retry_button);
@@ -70,7 +66,6 @@ public class HomeFragment extends Fragment {
             }
         });
     }
-
 
     public void getDocById(String docId) {
         CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getCouchBaseApiRetrofitInstance();
@@ -94,7 +89,6 @@ public class HomeFragment extends Fragment {
                 t.printStackTrace();
             }
         });
-
 
         // Couchbase Java SDK
         // TODO: 19/02/2017 Bug: java.lang.NoClassDefFoundError: Failed resolution of: Ljava/lang/management/ManagementFactory;

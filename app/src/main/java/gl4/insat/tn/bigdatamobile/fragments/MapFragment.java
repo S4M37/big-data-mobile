@@ -36,7 +36,6 @@ import com.google.android.gms.maps.model.BitmapDescriptorFactory;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
-import com.google.gson.JsonObject;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -45,7 +44,6 @@ import java.util.Calendar;
 import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
-import java.util.Random;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.UUID;
@@ -53,9 +51,6 @@ import java.util.UUID;
 import cn.refactor.lib.colordialog.PromptDialog;
 import gl4.insat.tn.bigdatamobile.R;
 import gl4.insat.tn.bigdatamobile.config.Endpoints;
-import gl4.insat.tn.bigdatamobile.entities.User;
-import gl4.insat.tn.bigdatamobile.services.CouchBaseApiRetrofitServices;
-import gl4.insat.tn.bigdatamobile.utils.Utils;
 
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -338,41 +333,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                     myLastLocation.getLongitude()), 14));
             googleMaps.setMyLocationEnabled(true);
 
-            CouchBaseApiRetrofitServices couchBaseApiRetrofitServices = Utils.getCouchBaseApiRetrofitInstance();
-
-            Random ran = new Random();
-
-            char data = ' ';
-            String dat = "";
-            for (int i = 0; i <= 30; i++) {
-                data = (char) (ran.nextInt(25) + 97);
-                dat = data + dat;
-            }
-            User user = new User();
-            user._userId = dat;
-            user.lat = myLastLocation.getLatitude();
-            user.lng = myLastLocation.getLongitude();
-            JsonObject jsonObject = new JsonObject();
-
-            jsonObject.addProperty("_userId", dat);
-            jsonObject.addProperty("lat", myLastLocation.getLatitude());
-            jsonObject.addProperty("lng", myLastLocation.getLongitude());
-            Log.d("add doc", "onConnected: " + jsonObject.toString());
-
-            /*
-            Call<ResponseBody> call = couchBaseApiRetrofitServices.addDocById(dat, jsonObject);
-            call.enqueue(new Callback<ResponseBody>() {
-                @Override
-                public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
-
-                }
-
-                @Override
-                public void onFailure(Call<ResponseBody> call, Throwable t) {
-
-                }
-            });
-            */
+            //CoucheBaseApiServices.getInstance().sendCurrentLocation(myLastLocation);
         }
     }
 
