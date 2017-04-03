@@ -3,6 +3,7 @@ package gl4.insat.tn.bigdatamobile.fragments;
 import android.Manifest;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -45,8 +46,11 @@ import java.util.GregorianCalendar;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.Random;
+import java.util.Timer;
+import java.util.TimerTask;
 import java.util.UUID;
 
+import cn.refactor.lib.colordialog.PromptDialog;
 import gl4.insat.tn.bigdatamobile.R;
 import gl4.insat.tn.bigdatamobile.config.Endpoints;
 import gl4.insat.tn.bigdatamobile.entities.User;
@@ -64,11 +68,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private GoogleApiClient mGoogleApiClient;
     private Location myLastLocation;
 
-
+    private int trafficInfo = 0;
     //couch internals
     protected static Manager manager;
     private Database database;
     private LiveQuery liveQuery;
+    private LocationManager location_manager;
+    private android.location.LocationListener location_listener;
 
     public static MapFragment newInstance() {
 
@@ -89,13 +95,15 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                     .addApi(LocationServices.API)
                     .build();
         }
+        /*
         try {
             startCBLite();
         } catch (Exception e) {
             Toast.makeText(getContext(), "Error Initializing CBLIte, see logs for details", Toast.LENGTH_LONG).show();
             Log.e("error", "Error initializing CBLite", e);
         }
-
+        */
+        location_manager = (LocationManager) getContext().getSystemService(getContext().LOCATION_SERVICE);
     }
 
     protected void startCBLite() throws Exception {
@@ -125,7 +133,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         startSync();
 
-        createGroceryItem("big Data mobile");
+        createLocationItem("big Data mobile");
 
     }
 
@@ -152,7 +160,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     }
 
-    private Document createGroceryItem(String text) throws Exception {
+    private Document createLocationItem(String text) throws Exception {
 
         SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
 
@@ -198,6 +206,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
         initializeMapView(rootView, savedInstanceState);
+        requestSpeed();
     }
 
     private void initializeView() {
@@ -212,8 +221,36 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
         googleMap.setOnMapClickListener(new GoogleMap.OnMapClickListener() {
             @Override
-            public void onMapClick(LatLng latLng) {
-                Toast.makeText(getContext(), "onMapClick", Toast.LENGTH_SHORT).show();
+            public void onMapClick(final LatLng latLng) {
+                Toast.makeText(getContext(), "requesting traffic info ...", Toast.LENGTH_SHORT).show();
+                new Timer().schedule(new TimerTask() {
+                    @Override
+                    public void run() {
+                        getActivity().runOnUiThread(new Runnable() {
+                            @Override
+                            public void run() {
+
+                                switch (trafficInfo) {
+                                    case 0:
+                                        showTraffcicFancyAlert(PromptDialog.DIALOG_TYPE_WRONG, "Traffic at this point {" +
+                                                latLng.latitude + "," + latLng.longitude + "}");
+                                        break;
+                                    case 1:
+                                        showTraffcicFancyAlert(PromptDialog.DIALOG_TYPE_WARNING, "Possible traffic at this point {" +
+                                                latLng.latitude + "," + latLng.longitude + "}");
+                                        break;
+                                    case 2:
+                                        showTraffcicFancyAlert(PromptDialog.DIALOG_TYPE_SUCCESS, "No traffic at this point {" +
+                                                latLng.latitude + "," + latLng.longitude + "}");
+                                        break;
+                                }
+                                trafficInfo += 1;
+                                trafficInfo %= 3;
+                            }
+                        });
+
+                    }
+                }, 1000);
             }
         });
         googleMaps.setOnMarkerClickListener(new GoogleMap.OnMarkerClickListener() {
@@ -231,6 +268,19 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     }
 
+    void showTraffcicFancyAlert(int dialogType, String s) {
+        new PromptDialog(getContext())
+                .setDialogType(dialogType)
+                .setAnimationEnable(true)
+                .setTitleText("Traffic info")
+                .setContentText(s)
+                .setPositiveListener("Ok", new PromptDialog.OnPositiveListener() {
+                    @Override
+                    public void onClick(PromptDialog dialog) {
+                        dialog.dismiss();
+                    }
+                }).show();
+    }
     //selectedMarker.setIcon(BitmapDescriptorFactory.fromResource(R.drawable.pin_coffee_empty));
 
     private void reinitMarker() {
@@ -369,5 +419,52 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     @Override
     public void onConnectionFailed(@NonNull ConnectionResult connectionResult) {
 
+    }
+
+
+    void requestSpeed() {
+        location_listener = new android.location.LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                Log.d("onLocationChanged : ", "Latitude : " + location.getLatitude() +
+                        " | Longitude : " + location.getLongitude() + " | Speed : " + location.getSpeed());
+            }
+
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String provider) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String provider) {
+
+            }
+        };
+        if (location_manager.getAllProviders().contains(LocationManager.GPS_PROVIDER))
+            if (ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(getContext(), Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+                // TODO: Consider calling
+                //    ActivityCompat#requestPermissions
+                // here to request the missing permissions, and then overriding
+                //   public void onRequestPermissionsResult(int requestCode, String[] permissions,
+                //                                          int[] grantResults)
+                // to handle the case where the user grants the permission. See the documentation
+                // for ActivityCompat#requestPermissions for more details.
+                return;
+            }
+        if (location_manager.getAllProviders().contains(LocationManager.GPS_PROVIDER))
+            location_manager.requestLocationUpdates(LocationManager.GPS_PROVIDER,
+                    0, 0, location_listener);
+        if (location_manager.getAllProviders().contains(LocationManager.NETWORK_PROVIDER))
+            location_manager.requestLocationUpdates(LocationManager.NETWORK_PROVIDER,
+                    0, 0, location_listener);
+    }
+
+    void stopSpeedMonitoring() {
+        location_manager.removeUpdates(location_listener);
     }
 }
