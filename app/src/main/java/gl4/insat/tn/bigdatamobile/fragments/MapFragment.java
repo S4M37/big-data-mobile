@@ -15,6 +15,13 @@ import android.view.ViewGroup;
 import android.widget.ProgressBar;
 import android.widget.Toast;
 
+import com.couchbase.lite.Database;
+import com.couchbase.lite.DatabaseOptions;
+import com.couchbase.lite.Document;
+import com.couchbase.lite.LiveQuery;
+import com.couchbase.lite.Manager;
+import com.couchbase.lite.android.AndroidContext;
+import com.couchbase.lite.replicator.Replication;
 import com.google.android.gms.common.ConnectionResult;
 import com.google.android.gms.common.api.GoogleApiClient;
 import com.google.android.gms.location.LocationListener;
@@ -30,9 +37,18 @@ import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.gson.JsonObject;
 
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.GregorianCalendar;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Random;
+import java.util.UUID;
 
 import gl4.insat.tn.bigdatamobile.R;
+import gl4.insat.tn.bigdatamobile.config.Endpoints;
 import gl4.insat.tn.bigdatamobile.entities.User;
 import gl4.insat.tn.bigdatamobile.services.CouchBaseApiRetrofitServices;
 import gl4.insat.tn.bigdatamobile.utils.Utils;
@@ -48,6 +64,11 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private GoogleApiClient mGoogleApiClient;
     private Location myLastLocation;
 
+
+    //couch internals
+    protected static Manager manager;
+    private Database database;
+    private LiveQuery liveQuery;
 
     public static MapFragment newInstance() {
 
@@ -68,7 +89,94 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                     .addApi(LocationServices.API)
                     .build();
         }
+        try {
+            startCBLite();
+        } catch (Exception e) {
+            Toast.makeText(getContext(), "Error Initializing CBLIte, see logs for details", Toast.LENGTH_LONG).show();
+            Log.e("error", "Error initializing CBLite", e);
+        }
+
     }
+
+    protected void startCBLite() throws Exception {
+
+
+        manager = new Manager(new AndroidContext(getContext()), Manager.DEFAULT_OPTIONS);
+
+        //install a view definition needed by the application
+        DatabaseOptions options = new DatabaseOptions();
+        options.setCreate(true);
+        database = manager.openDatabase("sync_gateway", options);
+        /*
+        com.couchbase.lite.View viewItemsByDate = database.getView(String.format("%s/%s", designDocName, byDateViewName));
+        viewItemsByDate.setMap(new Mapper() {
+            @Override
+            public void map(Map<String, Object> document, Emitter emitter) {
+                Object createdAt = document.get("created_at");
+                if (createdAt != null) {
+                    emitter.emit(createdAt.toString(), null);
+                }
+            }
+        }, "1.0");
+        */
+        //initItemListAdapter();
+
+        //startLiveQuery(viewItemsByDate);
+
+        startSync();
+
+        createGroceryItem("big Data mobile");
+
+    }
+
+    private void startSync() {
+
+        URL syncUrl;
+        try {
+            syncUrl = new URL(Endpoints.COUCHEBASE_SYNC_GATEWAY);
+        } catch (MalformedURLException e) {
+            throw new RuntimeException(e);
+        }
+
+        Replication pullReplication = database.createPullReplication(syncUrl);
+        pullReplication.setContinuous(true);
+
+        Replication pushReplication = database.createPushReplication(syncUrl);
+        pushReplication.setContinuous(true);
+
+        pullReplication.start();
+        pushReplication.start();
+
+        //pullReplication.addChangeListener(this);
+        //pushReplication.addChangeListener(this);
+
+    }
+
+    private Document createGroceryItem(String text) throws Exception {
+
+        SimpleDateFormat dateFormatter = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+
+        UUID uuid = UUID.randomUUID();
+        Calendar calendar = GregorianCalendar.getInstance();
+        long currentTime = calendar.getTimeInMillis();
+        String currentTimeString = dateFormatter.format(calendar.getTime());
+
+        String id = currentTime + "-" + uuid.toString();
+
+        Document document = database.createDocument();
+
+        Map<String, Object> properties = new HashMap<String, Object>();
+        properties.put("_id", id);
+        properties.put("text", text);
+        properties.put("check", Boolean.FALSE);
+        properties.put("created_at", currentTimeString);
+        document.putProperties(properties);
+
+        Log.d("couchebase", "Created new grocery item with id: " + document.getId());
+
+        return document;
+    }
+
 
     @Nullable
     @Override
@@ -200,6 +308,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
             jsonObject.addProperty("lat", myLastLocation.getLatitude());
             jsonObject.addProperty("lng", myLastLocation.getLongitude());
             Log.d("add doc", "onConnected: " + jsonObject.toString());
+
             /*
             Call<ResponseBody> call = couchBaseApiRetrofitServices.addDocById(dat, jsonObject);
             call.enqueue(new Callback<ResponseBody>() {
