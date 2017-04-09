@@ -6,7 +6,7 @@
     <com.google.android.gms.maps.MapView
         android:id="@+id/map_view"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent" />
 
 
     <ProgressBar
@@ -16,4 +16,8 @@
         android:layout_centerInParent="true"
         android:visibility="visible" />
 
+    <gl4.insat.tn.bigdatamobile.widgets.ChartDialog
+        android:id="@+id/chart"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
 </RelativeLayout>

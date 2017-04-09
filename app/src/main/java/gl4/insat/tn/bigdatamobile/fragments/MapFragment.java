@@ -51,6 +51,8 @@ import java.util.UUID;
 import cn.refactor.lib.colordialog.PromptDialog;
 import gl4.insat.tn.bigdatamobile.R;
 import gl4.insat.tn.bigdatamobile.config.Endpoints;
+import gl4.insat.tn.bigdatamobile.services.CoucheBaseApiServices;
+import gl4.insat.tn.bigdatamobile.widgets.ChartDialog;
 
 
 public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleApiClient.ConnectionCallbacks, GoogleApiClient.OnConnectionFailedListener {
@@ -70,6 +72,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private LiveQuery liveQuery;
     private LocationManager location_manager;
     private android.location.LocationListener location_listener;
+    private ChartDialog chart;
 
     public static MapFragment newInstance() {
 
@@ -90,14 +93,14 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                     .addApi(LocationServices.API)
                     .build();
         }
-        /*
+
         try {
             startCBLite();
         } catch (Exception e) {
             Toast.makeText(getContext(), "Error Initializing CBLIte, see logs for details", Toast.LENGTH_LONG).show();
             Log.e("error", "Error initializing CBLite", e);
         }
-        */
+
         location_manager = (LocationManager) getContext().getSystemService(getContext().LOCATION_SERVICE);
     }
 
@@ -206,6 +209,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
     private void initializeView() {
         progressBar = (ProgressBar) rootView.findViewById(R.id.progress_bar);
+        chart = (ChartDialog) rootView.findViewById(R.id.chart);
     }
 
     @Override
@@ -252,6 +256,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
 
             @Override
             public boolean onMarkerClick(Marker marker) {
+                chart.openView();
                 return true;
             }
         });
@@ -333,7 +338,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                     myLastLocation.getLongitude()), 14));
             googleMaps.setMyLocationEnabled(true);
 
-            //CoucheBaseApiServices.getInstance().sendCurrentLocation(myLastLocation);
+            CoucheBaseApiServices.getInstance().sendCurrentLocation(myLastLocation);
         }
     }
 
