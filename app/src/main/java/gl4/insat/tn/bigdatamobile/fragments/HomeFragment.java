@@ -16,7 +16,7 @@ import org.json.JSONObject;
 import java.io.IOException;
 
 import gl4.insat.tn.bigdatamobile.R;
-import gl4.insat.tn.bigdatamobile.activities.MainActivity;
+import gl4.insat.tn.bigdatamobile.activities.TestActivity;
 import gl4.insat.tn.bigdatamobile.entities.Brewery;
 import gl4.insat.tn.bigdatamobile.services.CouchBaseApiRetrofitServices;
 import gl4.insat.tn.bigdatamobile.utils.Utils;
@@ -27,6 +27,7 @@ import retrofit2.Response;
 
 
 public class HomeFragment extends Fragment {
+
 
     public static HomeFragment newInstance() {
         Bundle args = new Bundle();
@@ -40,6 +41,7 @@ public class HomeFragment extends Fragment {
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
     }
 
     @Nullable
@@ -62,7 +64,7 @@ public class HomeFragment extends Fragment {
         mapButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                ((MainActivity) getActivity()).showFragment(MapFragment.newInstance());
+                ((TestActivity) getActivity()).showFragment(MapFragment.newInstance());
             }
         });
     }
@@ -101,4 +103,6 @@ public class HomeFragment extends Fragment {
         }
         */
     }
+
+
 }

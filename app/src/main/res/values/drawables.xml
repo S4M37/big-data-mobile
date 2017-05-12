@@ -1,0 +1,8 @@
+<resources>
+    <item name="ic_menu_manage" type="drawable">@drawable/ic_action_settings</item>
+    <item name="ic_menu_share" type="drawable">@android:drawable/ic_menu_share</item>
+    <item name="ic_menu_send" type="drawable">@android:drawable/ic_menu_send</item>
+    <item name="ic_menu_help" type="drawable">@drawable/ic_action_info</item>
+    <item name="ic_menu_about" type="drawable">@drawable/ic_action_contract</item>
+    <item name="ic_menu_profile" type="drawable">@drawable/ic_action_profile</item>
+</resources>

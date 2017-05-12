@@ -7,6 +7,7 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.ActivityCompat;
 import android.support.v4.app.Fragment;
 import android.util.Log;
@@ -73,6 +74,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private LocationManager location_manager;
     private android.location.LocationListener location_listener;
     private ChartDialog chart;
+    private boolean broadCastEnabled;
 
     public static MapFragment newInstance() {
 
@@ -210,6 +212,20 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     private void initializeView() {
         progressBar = (ProgressBar) rootView.findViewById(R.id.progress_bar);
         chart = (ChartDialog) rootView.findViewById(R.id.chart);
+        final FloatingActionButton networkBroadCastFab = (FloatingActionButton) rootView.findViewById(R.id.network_broadcast);
+        networkBroadCastFab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                broadCastEnabled = !broadCastEnabled;
+                if (broadCastEnabled) {
+                    networkBroadCastFab.setImageResource(R.drawable.ic_action_network_wifi);
+                    Toast.makeText(getContext(), "Broadcast enabled", Toast.LENGTH_SHORT).show();
+                } else {
+                    networkBroadCastFab.setImageResource(R.drawable.ic_action_signal_wifi_off);
+                    Toast.makeText(getContext(), "Broadcast disabled", Toast.LENGTH_SHORT).show();
+                }
+            }
+        });
     }
 
     @Override
@@ -228,7 +244,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-
+                                /*
                                 switch (trafficInfo) {
                                     case 0:
                                         showTraffcicFancyAlert(PromptDialog.DIALOG_TYPE_WRONG, "Traffic at this point {" +
@@ -245,6 +261,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                                 }
                                 trafficInfo += 1;
                                 trafficInfo %= 3;
+                                */
+                                chart.openView();
                             }
                         });
 
@@ -332,7 +350,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         myLastLocation = LocationServices.FusedLocationApi.getLastLocation(
                 mGoogleApiClient);
         if (myLastLocation != null) {
-            Toast.makeText(getContext(), myLastLocation.getLatitude() + " " + myLastLocation.getLongitude(), Toast.LENGTH_LONG).show();
+            //Toast.makeText(getContext(), myLastLocation.getLatitude() + " " + myLastLocation.getLongitude(), Toast.LENGTH_LONG).show();
             progressBar.setVisibility(View.GONE);
             googleMaps.moveCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(myLastLocation.getLatitude(),
                     myLastLocation.getLongitude()), 14));
@@ -374,11 +392,13 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
     @Override
     public void onStart() {
         mGoogleApiClient.connect();
+        mapView.onStart();
         super.onStart();
     }
 
     public void onStop() {
         mGoogleApiClient.disconnect();
+        mapView.onStop();
         super.onStop();
     }
 

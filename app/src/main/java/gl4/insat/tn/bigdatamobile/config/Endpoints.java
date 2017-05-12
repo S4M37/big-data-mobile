@@ -7,11 +7,14 @@ public class Endpoints {
      *  docker run -d --name db -p 8091-8094:8091-8094 -p 11210:11210 couchbase
      *  Container runs under http://localhost:8091
      */
-    public static final String SERVER_IP = "192.168.43.88";
+    public static final String SERVER_IP = "192.168.43.217";
     public static final String COUCHEBASE_ENDPOINT = "http://" + SERVER_IP + ":8091/";
     public static final String COUCHEBASE_API_ENDPOINT = COUCHEBASE_ENDPOINT + "pools/default/buckets/";
     public static final String COUCHEBASE_BEER_SAMPLE_URI = "beer-sample/docs/";
     public static final String COUCHEBASE_MOBILE_URI = "mobile_bucket/docs/";
 
     public static final String COUCHEBASE_SYNC_GATEWAY = "http://" + SERVER_IP + ":4984/sync_gateway";
+
+    public static final String STREET_HOLES_ENDPOINT = "http://192.168.43.71:4000/api/";
+    public static final String STREET_HOLES_USER_REPORT_URI = "user-street-hole-report/";
 }
