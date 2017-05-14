@@ -104,6 +104,17 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
         }
 
         location_manager = (LocationManager) getContext().getSystemService(getContext().LOCATION_SERVICE);
+            new PromptDialog(getContext())
+                    .setDialogType(PromptDialog.DIALOG_TYPE_WRONG)
+                    .setAnimationEnable(true)
+                    .setTitleText("Ooops")
+                    .setContentText("We cannot establish connection to the server, Please check your network connection")
+                    .setPositiveListener("Ok", new PromptDialog.OnPositiveListener() {
+                        @Override
+                        public void onClick(PromptDialog dialog) {
+                            dialog.dismiss();
+                        }
+                    }).show();
     }
 
     protected void startCBLite() throws Exception {
@@ -244,7 +255,7 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                         getActivity().runOnUiThread(new Runnable() {
                             @Override
                             public void run() {
-                                /*
+
                                 switch (trafficInfo) {
                                     case 0:
                                         showTraffcicFancyAlert(PromptDialog.DIALOG_TYPE_WRONG, "Traffic at this point {" +
@@ -261,8 +272,8 @@ public class MapFragment extends Fragment implements OnMapReadyCallback, GoogleA
                                 }
                                 trafficInfo += 1;
                                 trafficInfo %= 3;
-                                */
-                                chart.openView();
+
+                                //chart.openView();
                             }
                         });
 
