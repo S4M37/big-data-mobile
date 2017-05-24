@@ -59,6 +59,35 @@ public class CoucheBaseApiServices {
 
             }
         });
+    }
+
+    public void trackUser(Location location, String address) {
+        JsonObject jsonObject = Utils.getGson().fromJson("{\n" +
+                "            \"id\": \"2wAx7Vv9BcIumkhAIf5PhQ\",\n" +
+                "                \"doc_type\": \"point\",\n" +
+                "                \"latitude\": " + location.getLatitude() + ",\n" +
+                "                \"longitude\": " + location.getLongitude() + ",\n" +
+                "                \"point_date\": \"2017-04-10 13:06:27 UTC\",\n" +
+                "                \"speed\": " + location.getSpeed() + ",\n" +
+                "                \"direction\": 2,\n" +
+                "                \"street\": " + address + "\n" +
+                "        }", JsonObject.class);
+
+        Call<ResponseBody> call = Utils.getCouchBaseApiRetrofitInstance().trackUser(jsonObject);
+        call.enqueue(new Callback<ResponseBody>() {
+            @Override
+            public void onResponse(Call<ResponseBody> call, Response<ResponseBody> response) {
+
+            }
+
+            @Override
+            public void onFailure(Call<ResponseBody> call, Throwable t) {
+
+            }
+        });
+    }
+
+    public void requestLiveTraffic(double[] start, double[] end) {
 
     }
 

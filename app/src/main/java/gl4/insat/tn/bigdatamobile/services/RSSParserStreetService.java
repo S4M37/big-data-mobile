@@ -1,6 +1,8 @@
 package gl4.insat.tn.bigdatamobile.services;
 
 
+import android.util.Log;
+
 import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.DefaultHandler;
@@ -44,6 +46,7 @@ public class RSSParserStreetService extends DefaultHandler {
             isParsing = true;
 
             itemarray.add(currentitem);
+            Log.d("currentitem", "startElement: ");
         } else {
             currentindex = itemIndexFromString(localName);
 
@@ -64,6 +67,7 @@ public class RSSParserStreetService extends DefaultHandler {
             if (isParsing) {
                 if (currentindex == 0) {
                     currentitem.formatted_address = builder.toString();
+                    Log.d("currentitem", "endElement: " + currentitem.formatted_address);
                 }
             }
         }

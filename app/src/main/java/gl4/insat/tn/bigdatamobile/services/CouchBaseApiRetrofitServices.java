@@ -10,6 +10,7 @@ import retrofit2.http.Body;
 import retrofit2.http.GET;
 import retrofit2.http.POST;
 import retrofit2.http.Path;
+import retrofit2.http.Query;
 
 public interface CouchBaseApiRetrofitServices {
 
@@ -18,4 +19,11 @@ public interface CouchBaseApiRetrofitServices {
 
     @POST(Endpoints.COUCHEBASE_MOBILE_URI + "{doc_id}")
     Call<ResponseBody> addDocById(@Path("doc_id") String docId, @Body JsonObject jsonObject);
+
+    @POST("/track-user")
+    Call<ResponseBody> trackUser(@Body JsonObject jsonObject);
+
+    @GET(Endpoints.COUCHEBASE_MAPREDUCE_VIEW_URI)
+   // Call<ResponseBody> requestLiveTraffic(@Query("start_range") double[] start, @Query("end_range") double[] end, @Query("stale") boolean stale);
+    Call<ResponseBody> requestLiveTraffic();
 }

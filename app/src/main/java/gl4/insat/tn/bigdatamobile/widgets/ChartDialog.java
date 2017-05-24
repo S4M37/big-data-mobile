@@ -122,7 +122,7 @@ public class ChartDialog extends CoordinatorLayout {
         List<Entry> chartEntries = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             StateObject stateObject = new StateObject();
-            int value = (int) (Math.random() * 10) + 1;
+            int value = (int) (Math.random() * 90) + 10;
             stateObject.setNbre(value);
             if (i < 10) {
                 stateObject.setDate("0" + i + ":00");

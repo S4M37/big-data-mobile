@@ -34,7 +34,7 @@ public class Utils {
                     .readTimeout(Utils.TIMEOUT, TimeUnit.SECONDS).build();
 
             Retrofit retrofit = new Retrofit.Builder()
-                    .baseUrl(Endpoints.COUCHEBASE_API_ENDPOINT)
+                    .baseUrl(Endpoints.COUCHEBASE_ENDPOINT)
                     .client(client)
                     .addConverterFactory(GsonConverterFactory.create())
                     .build();
